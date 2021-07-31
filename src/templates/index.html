@@ -1,10 +1,14 @@
 <html>
    <head>
-      <script type = "text/javascript" 
-         src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+      <title>Lorkaan's Website</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
    </head>
    
    <body>
-      <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+      <div id="box">
+         <h1 id="title">Website Under Construction</h1>
+         <!--<embed id="resume" src="{{ url_for('static', filename = 'resume.pdf') }}"/>-->
+         <iframe id="resume" src="{{ url_for('static', filename = 'resume.pdf') }}"></iframe>
+      </div>  
    </body>
 </html>
